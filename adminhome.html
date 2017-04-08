@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>OnlineExamination System</title>
+
+  <link rel="StyleSheet" href="sinorcaish-screen.css" type="text/css" media="screen" />
+  <link rel="StyleSheet" href="sinorcaish-print.css" type="text/css" media="print" />
+<script>
+function prof()
+{
+var name=documents.forms[myForm3][name11].value;
+var fn=documents.forms[myForm3][fname11].value;
+ if (name==null || name=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+   if (fn==null || fn=="")
+  {
+  alert("Father's name must be filled out");
+  return false;
+  }
+}
+</script>
+
+  </head>
+
+<body>
+
+<!-- For non-visual or non-stylesheet-capable user agents -->
+<div id="mainlink"><a href="#main">Skip to main content.</a></div>
+
+
+<!-- ======== Header ======== -->
+
+<div id="header">
+  <div class="left">
+    <p><a href="adminhome.html">Admin<span class="alt">Page</span></a></p>
+  </div>
+
+
+  <div class="subheader">
+    <p>
+      <span class="hidden">Navigation:</span>
+      <a href="adminhome.html">Admin Home</a> |
+	  <a href="index.html">Home</a> |
+      <a href="about.jsp">About</a> |
+      <a href="feedback.jsp">Feedback</a> |
+      <a href="contact.jsp">Contact Us</a> |	
+      
+    </p>
+  </div>
+</div>
+
+
+<!-- ======== Left Sidebar ======== -->
+
+<div id="sidebar">
+  <div>
+    <p class="title"><a href="index.html">Other</a></p>
+	<form name="myForm1" action="sub.jsp">
+    <ul>Set Ques Ans<br>
+	<li><Input type="radio" value="php" name="sub">Php</li>
+    <li><Input type="radio" value="java" name="sub">Java</li>
+    <li><Input type="radio" value="oracle" name="sub">Oracle</li>
+    <li><Input type="radio" value="android" name="sub">Android</li>
+    <li><Input type="radio" value=".net" name="sub">.Net</li>
+    <input type="Submit"> <input type="reset">
+	</form>	  
+      
+	<!--  	-->  
+        <span class="hidden">(this page)</span></li>
+     <a href="result.jsp">View All Result</a>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- ======== Main Content ======== -->
+
+<div id="main">
+
+<div id="navhead">
+  <hr />
+  <span class="hidden">Path to this page:</span>
+  <a href="index.html">Home</a> &raquo;
+  <a href="index.html">Other</a> &raquo;
+</div>
+
+
+<h1>Check Profile</h1>
+
+<form name="myForm3" action="checkprofile.jsp" onSubmit="return prof()">
+ Enter name<input type="text" name="name11"><br>
+ Enter father's Name<input type="text" name="fname11"><br>
+ <INPUT TYPE="SUBMIT" value="Check Profile"> <input type="reset"><br>
+ </form>
+
+<form name="myForm2" action="ViewQuesAns.jsp">
+    <ul>View Ques Ans<br>
+	<li><Input type="radio" value="php" name="viewsub">Php</li>
+    <li><Input type="radio" value="java" name="viewsub">Java</li>
+    <li><Input type="radio" value="oracle" name="viewsub">Oracle</li>
+    <li><Input type="radio" value="android" name="viewsub">Android</li>
+    <li><Input type="radio" value=".net" name="viewsub">.Net</li>
+    <input type="Submit"> <input type="reset"
+	</form>
+<br id="endmain" />
+</div>
+
+
+<!-- ======== Footer ======== -->
+
+<div id="footer">
+  <hr />
+  Copyright &copy; 2014, Prabhat Kumar.  All rights reserved.
+  <span class="notprinted">
+    <a href="index.html">Terms of Use</a>.
+    <a href="index.html">Privacy Policy</a>.
+  </span>
+  <br />
+
+  <h3>&copy; 2014-prabhat2k15@gmail.com | Design by <Strong> Prabhat </strong>| </h3>
+</div>
+
+</body>
+</html>

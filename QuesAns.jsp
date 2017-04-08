@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <title>OnlineExamination System</title>
+
+  <link rel="StyleSheet" href="sinorcaish-screen.css" type="text/css" media="screen" />
+  <link rel="StyleSheet" href="sinorcaish-print.css" type="text/css" media="print" />
+ 
+<script>
+			 
+	function validateForm()
+{
+var qno=document.forms["myForm"]["qno"].value;
+var q=document.forms["myForm"]["ques"].value;
+var a=document.forms["myForm"]["A"].value;
+var b=document.forms["myForm"]["B"].value;
+var c=document.forms["myForm"]["C"].value;
+var d=document.forms["myForm"]["D"].value;
+var cor=document.forms["myForm"]["Correct"].value;
+
+if (qno==null || qno=="" || (isNaN(qno)))
+  {
+  alert("Invalid ques no");
+  return false;
+  }
+  
+    if (q==null || q=="")
+  {
+  alert("Question must be filled out");
+  return false;
+  }
+     if (a==null || a=="")
+  {
+  alert("Opt A must be filled out");
+  return false;
+  }
+  if (b==null || b=="")
+  {
+  alert("Opt B must be filled out");
+  return false;
+  }
+ if (c==null || c=="")
+  {
+  alert("Opt C must be filled out");
+  return false;
+  }
+ if (d==null || d=="")
+  {
+  alert("Opt D must be filled out");
+  return false;
+  }
+  if (cor==null || cor=="")
+  {
+  alert("Correct Opt must be filled out");
+  return false;
+  }
+  
+}
+	 
+	</script> 
+
+</head>
+
+<body>
+
+<!-- For non-visual or non-stylesheet-capable user agents -->
+<div id="mainlink"><a href="#main">Skip to main content.</a></div>
+
+
+<!-- ======== Header ======== -->
+
+<div id="header">
+  <div class="left">
+    <p><a href="adminhome.html">Admin<span class="alt">Page</span></a></p>
+  </div>
+
+
+  <div class="subheader">
+    <p>
+      <span class="hidden">Navigation:</span>
+      <a href="adminhome.html">Admin Home</a> |
+	  <a href="index.html">Home</a> |
+      <a href="about.jsp">About</a> |
+      <a href="feedback.jsp">Feedback</a> |
+      <a href="contact.jsp">Contact Us</a> |
+      
+    </p>
+  </div>
+</div>
+
+
+<!-- ======== Left Sidebar ======== -->
+
+<div id="sidebar">
+  <div>
+    <p class="title"><a href="index.html">Other</a></p>
+    <ul>
+      <li><a href="QuesAns.html">Set Ques Ans</a></li>
+      
+        <span class="hidden">(this page)</span></li>
+      <li><a href="checkprofile.jsp">Profile</a></li>
+     
+    </ul>
+  </div>
+</div>
+
+
+<!-- ======== Main Content ======== -->
+
+<div id="main">
+
+
+
+
+<h1>Set Question and Answer for <Strong> <%out.println(session.getAttribute("sub"));%></strong></h1>
+
+<a href="index.html">Home</a>
+	<form name="myForm" action="QuesAnsSet.jsp" onsubmit="return validateForm()">
+	Q.No:<input type="text" name="qno">
+	Question:<input type="text" name="ques">
+	<br>Answer:<br>
+	A:<input type="text" name="A"><br>
+	B:<input type="text" name="B"><br>
+	C:<input type="text" name="C"><br>
+	D:<input type="text" name="D"><br>
+	Correct:<input type="text" name="Correct"><br><br>
+	Explanation:<input type="text" name="Expl"><br>
+	<input type="Submit">
+	</form>
+
+
+<br id="endmain" />
+</div>
+
+<!-- ======== Footer ======== -->
+
+<div id="footer">
+  <hr />
+  Copyright &copy; 2014, Prabhat Kumar.  All rights reserved.
+  <span class="notprinted">
+    <a href="index.html">Terms of Use</a>.
+    <a href="index.html">Privacy Policy</a>.
+  </span>
+  <br />
+
+  <h3>&copy; 2014-prab2k11@gmail.com | Design by <Strong> Prabhat </strong>| </h3>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.exam4u.tk">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>Online Exam Registration</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		  
+ <script>
+			 
+	function regForm()
+{
+ 
+var n=document.forms["myForm"]["name"].value;
+var a=document.forms["myForm"]["age"].value;
+var usr=document.forms["myForm"]["username"].value;
+var p=document.forms["myForm"]["pwd"].value;
+var cp=document.forms["myForm"]["confpwd"].value;
+var marks_12=document.forms["myForm"]["marks12"].value;
+var marks_btech=document.forms["myForm"]["marksbtech"].value;
+var f_name=document.forms["myForm"]["fname"].value;
+var m_name=document.forms["myForm"]["mname"].value;
+var dist=document.forms["myForm"]["district"].value;
+var st=document.forms["myForm"]["state"].value;
+ if (n==null || n=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+    else if (!Number(a) || a=="" || a<=0)
+  {
+  alert("Roll no  must be filled out & It must be a No");
+  return false;
+  }
+  if (usr==null || usr=="")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+  else if (p==null || p=="")
+  {
+  alert("Password must be filled out");
+  return false;
+  }
+  else if (p!=cp)
+  {
+  alert("Password do not match");
+  return false;
+  }
+  else if (marks_12==null || marks_12=="")
+  {
+  alert("Please Enter 12th Marks ");
+  return false;
+  }
+  else if(marksbtech==null || marksbtech=="")
+  {
+  alert("Please Enter Btech Aggregate  ");
+  return false;
+  }
+  else if (f_name==null || f_name=="")
+  {
+  alert("Enter Father's name");
+  return false;
+  }
+  else if (m_name==null || m_name=="")
+  {
+  alert("Enter Mother's Name");
+  return false;
+  }
+  else if (dist==null || dist=="")
+  {
+  alert("Enter District");
+  return false;
+  }
+  else if (st==null || st=="")
+  {
+  alert("Enter state");
+  return false;
+  }
+}
+	 
+	</script> 
+ 
+	</head>
+
+	<body>
+<a href="http://www.facebook.com/"><img width="25" height="25"  src="fbLogo.png" </img></a>  
+
+<a href="http://www.gmail.com"/><img width="25" height="25" src="gmailLogo.jpg"</img></a>  
+
+<a href="http://www.yahoo.com/"><img width="25" height="25" src="yahooLogo.jpg" </img></a>  
+
+<a href="http://www.twitter.com/"><img width="25" height="25" src="twitterLogo.jpg" </img></a>  
+
+<a href="http://www.Songs.pk/"><img width="25" height="25" src="sonspkLogo.jpg"</img></a>   
+ 	
+	
+
+		
+ 
+
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1><a href="#">Online Exam</a></h1>
+				</div>
+				<div id="menu">
+				
+					<ul>
+						<li class="first current_page_item"><a href="index.html">Home</a></li>
+						 
+						<li><a href="https://blogprabhat.wordpress.com/">Blog</a></li>
+						<li><a href="about.jsp">About</a></li>
+						<li><a href="feedback.jsp">Feedback</a></li>
+						<li class="last"><a href="contact.jsp">Contact</a></li>
+					</ul>
+					<br class="clearfix" />
+				</div>
+			</div>
+			
+			
+					<h3> </h3>
+					<p>
+<FORM name="myForm" action="Register.jsp" onSubmit="return regForm()">
+Name:&nbsp;<INPUT TYPE="text box" name="name"> </BR>
+
+Father's Name:&nbsp;<INPUT TYPE="text box" name="fname"> </BR>
+
+Mother's Name:<INPUT TYPE="text box" name="mname"> </BR>
+
+Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;<INPUT TYPE="text box" name="age"></BR>
+ 
+Sex:
+<input type="radio" name="sex"  value="M"/> Male
+<input type="radio" name="sex"  value="F"/> Female
+<input type="radio" name="sex"  value="O"/> Other
+ </br>
+ 
+Address: <textarea name="address" rows=1 cols=40></textarea></BR>
+
+District:<INPUT TYPE="text box" name="district"> </BR>
+
+State:<INPUT TYPE="text box" name="state"> </BR>
+
+Pin Code:<INPUT TYPE="text box" name="pcode"> </BR>
+
+Contact No:<INPUT TYPE="text box" name="cno"> </BR>
+
+Identification Mark:<INPUT TYPE="text box" name="imark"> </BR>
+
+Course:<select name="stream">
+	<option value="php">PHP</option>
+	<option value="java">Java</option>
+	<option value="android">Android</option>
+	<option value=".net">.Net</option>
+	<option value="oracle">Oracle</option>
+	
+	</select>
+<br>
+Aggregate in 12th:</td><td><INPUT TYPE="TEXT BOX" name="marks12"> </BR>
+
+Aggregate in 10th:</td><td><INPUT TYPE="TEXT BOX" name="marks10"></BR>
+
+Aggregate in B-tech(till now):</td><td><INPUT TYPE="TEXT BOX" name="marksbtech"></BR>
+	
+E-mail Id:<INPUT TYPE="TEXT BOX" name="username"></BR>
+Password:<INPUT TYPE="PASSWORD" name="pwd"></BR>
+Confirm Password:<INPUT TYPE="PASSWORD" name="confpwd"></BR>
+
+Mode Of Payement:<select name="payment">
+	<option value="cash">Cash</option>
+	<option value="draft">Draft</option>
+	<option value="account">In Account</option>
+	</select></BR>
+
+ 
+<INPUT TYPE="SUBMIT">
+<INPUT TYPE="RESET"></BR>
+</FORM>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<Strong> &copy; 2014-prabhat2k15@gmail.com | Design by Prabhat </strong>|
+		</div>
+	</body>
+</html>

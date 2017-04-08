@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>Online Exam</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		  
+	<script>
+		function log()
+		{
+			var usr=document.forms["myForm"]["txtuser"].value
+			var pwd=document.forms["myForm"]["txtpwd"].value
+			if(usr==null || usr=="")
+			   {
+			   alert("Enter Username");
+				return false;
+				}
+			else if(pwd==null || pwd=="")
+			   {
+			   alert("Enter Password");
+				return false;
+				}
+			}
+	</script>
+ 
+ <style type="text/css">
+body {
+	font: x-small Verdana, Arial, Helvetica, sans-serif;
+	background:url(bg.jpg);
+}
+* html body{
+	font-size:xx-small;
+ f\ont-size:x-small;
+}
+ul#nav, ul#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+ul#nav  li {
+	position: relative;
+	float: left;
+	width:149px;
+}
+	
+#nav li ul {
+	position: absolute;
+	margin-left: -999em; /* hide menu from view */
+	top: auto;
+	left:0;
+}
+
+/* Styles for Menu Items */
+ul#nav  li a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background: #ffffcc; /* IE6 Bug */
+	padding: 5px;
+	border: 1px solid #ccc;
+		margin-bottom:-1px;
+	min-height:0;
+	}
+/* commented backslash mac hiding hack \*/ 
+* html ul#nav  li a {height:1%;	position:relative;}
+/* end hack */ 
+
+/* this sets all hovered lists to red */
+#nav li:hover a,#nav  li.over a,
+#nav li:hover li a:hover,#nav li.over li a:hover {
+   color: #fff;
+   background-color: red;}
+
+/* set dropdown to default */
+#nav li:hover li a,#nav li.over li a {
+   color: #777;
+   background-color: #ffffcc;
+}
+#nav li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+#nav li:hover ul,#nav li.over ul {margin-left:0; } /* show menu*/
+
+</style>
+ 
+	</head>
+	<iframe src="loginiframe.html"></iframe>
+	
+<div id="menu">
+					
+					<!--<ul>
+						<li class="first current_page_item"><a href="index.html">Home</a></li>
+						 
+						<li><a href="https://blogprabhat.wordpress.com/">Blog</a></li>
+						<li><a href="about.jsp">About</a></li>
+						<li><a href="feedback.jsp">Feedback</a></li>
+						<li class="last"><a href="contact.jsp">Contact</a></li>
+					</ul>-->
+					<br class="clearfix" />
+				</div> 
+				
+			</div>
+			<div id="inner">
+			
+				<div id="page">
+					<div id="content">
+						<div class="box">
+							<h2>Welcome</h2>
+							<img class="image alignleft" src="icon.jpg" width="215" height="150" alt="" />
+							<p>
+								This is an <strong>Online Examination</strong>,Website made for you all.This is a free website where you can give exams of different courses <strong>online</strong>.So you are pretty much free to do whatever you want with it (even use it commercially) provided you keep the footer credits intact. Aside from that, have fun with it :)
+							</p>
+							<br class="clearfix" />
+						</div>
+						<div class="box col1">
+							<h3>Features</h3>
+							<p>
+								Here are some of the features of this website.
+							</p>
+							<ul class="list">
+								<b><li class="first"><a href="#">Simple & Clear</a></li>
+								<li><a href="#">Good User Iterface</a></li>
+								<li><a href="#">Saves Money & Paper</a></li>
+								<li><a href="#">Saves Time </a></li>
+								<li class="last"><a href="#">Immediate Result </a></li></b>
+							</ul>
+						</div>
+						<div class="box col2">
+							<h3>About The Developer</h3>
+							<img class="image aligntop" src="bbg.jpg" width="430" height="155" alt="" />
+							<p>
+								The developer of this website is <strong>Prabhat</strong>.
+								He has a very sound knowledge about the Web Design and Web Development.
+								Apart from the knowlwdge,he is also a very good Athlete.He is very Hard
+								Working and always ready for the challenges to face.....
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+	</body>
+</html>
